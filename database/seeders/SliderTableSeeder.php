@@ -18,7 +18,7 @@ class SliderTableSeeder extends Seeder
           'zag' => 'zag',
           'title' => 'title',
           'link'  => 'link',
-          'image' => 'abstract-colors-unreal-clouds-1927.jpg'
+          'image' => 'black-carbon-industrial-background_79145-253.jpg'
         ]);
     }
 }
