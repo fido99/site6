@@ -41297,7 +41297,7 @@ var render = function() {
             _c("div", { staticClass: "header_left_panel" }, [
               _c("div", { staticClass: "logo" }, [
                 _c("img", {
-                  attrs: { src: "storage/folder/" + _vm.url, alt: "error logo" }
+                  attrs: { src: "images/" + _vm.url, alt: "error logo" }
                 })
               ]),
               _vm._v(" "),
@@ -41462,7 +41462,7 @@ var render = function() {
         {
           staticClass: "slide_item",
           style: {
-            background: "url(storage/folder/" + item.image + ") no-repeat",
+            background: "url(images/slider/" + item.image + ") no-repeat",
             backgroundSize: "cover"
           }
         },

@@ -50,7 +50,8 @@ class SliderAdminController extends Controller
         if ($request->file("image")) {
              $file = $request->file("image");
              $file_name = $request->file('image')->getClientOriginalName();
-             Storage::putFileAs($upload_folder, $file, $file_name);
+             // Storage::putFileAs($upload_folder, $file, $file_name);
+             $file->move('images/slider', $file_name);
         } else {
              $file_name = "-";
         }
@@ -120,7 +121,8 @@ class SliderAdminController extends Controller
         if ($request->file("image")) {
              $file = $request->file("image");
              $file_name = $request->file('image')->getClientOriginalName();
-             Storage::putFileAs($upload_folder, $file, $file_name);
+             // Storage::putFileAs($upload_folder, $file, $file_name);
+             $file->move('images/slider', $file_name);
         } else {
             $id = $request->input("id");
             $file_name = DB::table("slider")->where("id", "=", $id)->first()->image;

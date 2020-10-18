@@ -15,7 +15,7 @@
       <div class="menu_block">
        <div class="header_left_panel">
         <div class="logo">
-         <img v-bind:src="'storage/folder/' + url" alt="error logo">
+         <img v-bind:src="'images/' + url" alt="error logo">
         </div>
      <div class="header_left_panel_line"></div>
      <div class="header_right_panel_email">

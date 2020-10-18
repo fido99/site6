@@ -18,7 +18,8 @@ class TemplateController extends Controller
         if ($request->file("logo_url")) {
              $logo = $request->file("logo_url");
              $file_name = $request->file('logo_url')->getClientOriginalName();
-             Storage::putFileAs($upload_folder, $logo, $file_name); 
+             // Storage::putFileAs($upload_folder, $logo, $file_name); 
+             $logo->move('images/', $file_name);
         } else {
              $file_name = DB::table('page')->select('logo_url')->first()->logo_url;
         }
